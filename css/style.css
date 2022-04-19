@@ -20,8 +20,8 @@ body{
   font-size: 16px;
   line-height: 1.5;
   font-family: "Arial", sans-serif;
-  background-color: #fff;
-  color: #222;
+  background-color: rgb(211, 137, 124);
+  color: #fff;
 }
 
 img{
@@ -29,19 +29,152 @@ img{
   height: auto;
 }
 
+a{
+  text-decoration: none;
+}
+
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1200px;
-  padding-left: 50px;
-  padding-right: 50px;
+  max-width: 1280px;
+  padding-left: 20px;
+  padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
+}
+
+/* WASHING-CYCLE */
+
+.washing-cycle {
+  background-color: rgb(211, 137, 124);
+}
+
+.washing-cycle__heading {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  margin-left: 200px;
+}
+.washing-cycle__links {
+  display: inline-block;
+  font-size: 52px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+}
+.washing-cycle__links:not(:last-child){
+  margin-right: 190px;
+}
+.washing-cycle__links:not(:first-child){
+  color: rgba(240, 248, 255, 0.596);
+}
+
+.washing-cycle__alert-text {
+  margin: 0;
+  margin-left: 200px;
+  padding-bottom: 50px;
+  width: 700px;
+  font-size: 22px;
+  color: #fff;
+}
+
+/* WASHING-FEATURES */
+
+
+.washing-features__inner {
+  padding-left: 40px;
+  position: relative;
+}
+.washing-features__list {
+  padding: 0;
+
+  margin: 0;
+  position: relative;
+  display: flex;
+  list-style: none;
+}
+
+.washing-features__left-slider{
+  position: absolute;
+  left: -60px;
+  border: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.689);
+  cursor: pointer;
+}
+.washing-features__right-slider{
+  position: absolute;
+  top: 0;
+  right: 348px;
+  border: 0;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.68);
+  cursor: pointer;
+}
+
+.washing-features__item {
+  background-color: rgba(34, 34, 34, 0.852);
+}
+
+.washing-features__item:nth-child(2){
+  background-color: rgba(34, 34, 34, 0.97);
+}
+
+.washing-features__item:last-child{
+  background-color: rgba(0, 0, 0, 0.886);
+}
+
+.washing-features__link {
+  display: flex;
+}
+
+.washing-features__details {
+  display: inline-block;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 30px;
+  padding-right: 100px;
+}
+
+.washing-features__details-term {
+  font-size: 20px;
+  color: rgb(211, 137, 124);
+  margin: 0;
+  padding:0 ;
+}
+
+.washing-features__details-definition {
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+}
+
+.washing-features__start-btn {
+  position: absolute;
+  bottom: -30px;
+  left: 60px;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 80px;
+  text-transform: uppercase;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.4s ease;
+}
+
+.washing-features__start-btn:hover{
+  transform: translateY(-5px);
 }
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
