@@ -19,8 +19,8 @@ body{
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
-  font-family: "Arial", sans-serif;
-  background-color: rgb(211, 137, 124);
+  font-family:"Roboto", "Arial", sans-serif;
+  background-color: #d3897c;
   color: #fff;
 }
 
@@ -36,7 +36,7 @@ a{
 /* CONTAINER */
 .container{
   width: 100%;
-  max-width: 1280px;
+  max-width: 640px;
   padding-left: 20px;
   padding-right: 20px;
   margin-left: auto;
@@ -48,134 +48,119 @@ a{
 /* MAIN-CONTENT */
 .main-content{
   flex-grow: 1;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /* WASHING-CYCLE */
 
-.washing-cycle {
-  background-color: rgb(211, 137, 124);
+.washing-cycle__wrapper {
 }
-
-.washing-cycle__heading {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  margin-left: 200px;
-}
-.washing-cycle__links {
-  display: inline-block;
-  font-size: 52px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #fff;
-}
-.washing-cycle__links:not(:last-child){
-  margin-right: 190px;
-}
-.washing-cycle__links:not(:first-child){
-  color: rgba(240, 248, 255, 0.596);
-}
-
-.washing-cycle__alert-text {
+.washing-cycle__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
   margin: 0;
-  margin-left: 200px;
-  padding-bottom: 50px;
-  width: 700px;
-  font-size: 22px;
+}
+.washing-cycle__item:not(:last-child) {
+  margin-right: 35px;
+}
+.washing-cycle__link {
+  font-size: 50px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
   color: #fff;
+  opacity: 0.7;
+  transition: opacity 0.4s ease;
+}
+.washing-cycle__link-active{
+  opacity: 1;
+}
+.washing-cycle__link:hover{
+  opacity: 1;
+}
+
+.washing-cycle__alert-desc{
+  width: 100%;
+  max-width: 450px;
 }
 
 /* WASHING-FEATURES */
 
-
-.washing-features__inner {
-  padding-left: 40px;
-  position: relative;
-}
-.washing-features__list {
-  padding: 0;
-
-  margin: 0;
+.washing-features {
   position: relative;
   display: flex;
-  list-style: none;
 }
 
-.washing-features__left-slider{
+.washing-features__btn{
   position: absolute;
-  left: -60px;
+  width: 60px;
+  height: 60px;
   border: 0;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.689);
+  background-color: #fff;
   cursor: pointer;
 }
-.washing-features__right-slider{
-  position: absolute;
+.previous{
   top: 0;
-  right: 348px;
-  border: 0;
-  width: 100px;
-  height: 100px;
-  background-color: rgba(255, 255, 255, 0.68);
-  cursor: pointer;
+  left: 0;
+  transform: translateX(-100%);
+}
+.next{
+  top: 0;
+  right: 0;
+  transform: translateX(100%);
 }
 
-.washing-features__item {
-  background-color: rgba(34, 34, 34, 0.852);
-}
-
-.washing-features__item:nth-child(2){
-  background-color: rgba(34, 34, 34, 0.97);
-}
-
-.washing-features__item:last-child{
-  background-color: rgba(0, 0, 0, 0.886);
-}
-
-.washing-features__link {
+.washing-features__list {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
 }
-
+.washing-features__list:nth-of-type(1){
+  background-color: #333;
+}
+.washing-features__list:nth-of-type(2){
+  background-color: #222;
+}
+.washing-features__list:nth-of-type(3){
+  background-color: #111;
+}
 .washing-features__details {
-  display: inline-block;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  padding-left: 30px;
-  padding-right: 100px;
+  padding: 20px;
 }
-
-.washing-features__details-term {
+.washing-features__title {
   font-size: 20px;
-  color: rgb(211, 137, 124);
+  color: #d3897c;
+}
+.washing-features__value {
+  font-size: 35px;
+  font-weight: 500;
   margin: 0;
-  padding:0 ;
 }
 
-.washing-features__details-definition {
-  font-size: 36px;
-  font-weight: 600;
-  color: #fff;
-  margin: 0;
-  padding: 0;
-}
-
-.washing-features__start-btn {
+.washing-features__start-action{
   position: absolute;
-  bottom: -30px;
-  left: 60px;
+  left: 10px;
+  bottom: 0;
+  transform: translateY(50%);
+  width: 180px;
+  padding: 15px;
   border: 0;
   border-radius: 5px;
-  padding: 15px 80px;
-  text-transform: uppercase;
-  background-color: #000;
   color: #fff;
-  cursor: pointer;
+  background-color: #000;
+  text-transform: uppercase;
   transition: transform 0.4s ease;
 }
 
-.washing-features__start-btn:hover{
-  transform: translateY(-5px);
+.washing-features__start-action:hover{
+  transform: translateY(40%);
 }
+
+
 
 /* BACKGROUND-IMAGE FOR RETINA SCREENS */
 @media

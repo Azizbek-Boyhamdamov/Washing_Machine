@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Washine Machine</title>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
 
 
   <!-- Stylesheets -->
@@ -18,64 +21,61 @@
   <main class="main-content">
 
     <!-- WASHING-CYCLE -->
+
     <section class="washing-cycle">
-      <div class="washing-cycle__heading">
-        <a href="#" class="washing-cycle__links">synthetic</a>
-        <a href="#" class="washing-cycle__links">wool</a>
-        <a href="#" class="washing-cycle__links">denim</a>
-        <a href="#" class="washing-cycle__links">line</a>
-      </div>
-      <p class="washing-cycle__alert-text">Loads should be under 8 pounds. It is recommended using neutral detergent to
-        prevent damage to the cloth and to improve the washing </p>
-      </section>
+      <div class="container">
+        <div class="washing-cycle__wrapper">
+          <ul class="washing-cycle__list">
+            <li class="washing-cycle__item">
+              <a href="#" class="washing-cycle__link washing-cycle__link-active">synthetetik</a>
+            </li>
+            <li class="washing-cycle__item">
+              <a href="#" class="washing-cycle__link">wool</a>
+            </li>
+            <li class="washing-cycle__item">
+              <a href="#" class="washing-cycle__link">denim</a>
+            </li>
+            <li class="washing-cycle__item">
+              <a href="#" class="washing-cycle__link">silk</a>
+            </li>
+            <li class="washing-cycle__item">
+              <a href="#" class="washing-cycle__link">linen</a>
+            </li>
+          </ul>
+          <p class="washing-cycle__alert-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia maxime eaque, alias perferendis natus vero.</p>
+        </div>
 
-      <section class="washing-features">
-        <div class="container">
-          <div class="washing-features__inner">
-            <button type="button" class="washing-features__left-slider">
-              <svg class="svg-icon"
-              style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
-              viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-              <path d="M256 512l512 409.6V102.4L256 512z" /></svg>
-            </button>
-
-            <ul class="washing-features__list">
-              <li class="washing-features__item">
-                <a href="#" class="washing-features__link">
-                  <dl class="washing-features__details">
-                    <dt class="washing-features__details-term">Timer</dt>
-                    <dd class="washing-features__details-definition">45 min</dd>
-                  </dl>
-                </a>
-              </li>
-              <li class="washing-features__item">
-                <a href="#" class="washing-features__link">
-                  <dl class="washing-features__details">
-                    <dt class="washing-features__details-term">Temperature</dt>
-                    <dd class="washing-features__details-definition">Cold</dd>
-                  </dl>
-                </a>
-              </li>
-              <li class="washing-features__item">
-                <a href="#" class="washing-features__link">
-                  <dl class="washing-features__details">
-                    <dt class="washing-features__details-term">Load</dt>
-                    <dd class="washing-features__details-definition">Medium</dd>
-                  </dl>
-                </a>
-              </li>
-            </ul>
-            <button type="button" class="washing-features__right-slider">
-              <svg class="svg-icon"
-              style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;"
-              viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg">
-              <path d="M256 102.4v819.2l512-409.6L256 102.4z" /></svg>
-            </button>
-            <button class="washing-features__start-btn" type="button">start</button>
+        <div class="washing-features">
+          <button class="washing-features__btn previous" type="button">
+            <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 512l512 409.6V102.4L256 512z"  /></svg>
+          </button>
+          <button class="washing-features__btn next" type="button">
+            <svg class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg"><path d="M256 102.4v819.2l512-409.6L256 102.4z"  /></svg>
+          </button>
+          <div class="washing-features__list">
+            <dl class="washing-features__details">
+              <dt class="washing-features__title">Timer</dt>
+              <dd class="washing-features__value">45 min</dd>
+            </dl>
           </div>
 
+          <div class="washing-features__list">
+            <dl class="washing-features__details">
+              <dt class="washing-features__title">Temperature</dt>
+              <dd class="washing-features__value">Cold</dd>
+            </dl>
+          </div>
+
+          <div class="washing-features__list">
+            <dl class="washing-features__details">
+              <dt class="washing-features__title">Load</dt>
+              <dd class="washing-features__value">Medium</dd>
+            </dl>
+          </div>
+          <button class="washing-features__start-action" type="button">start</button>
         </div>
-      </section>
+      </div>
+    </section>
     </main>
     <script src="./js/main.js"></script>
   </body>
