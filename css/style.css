@@ -55,6 +55,7 @@ a{
 /* WASHING-CYCLE */
 
 .washing-cycle__wrapper {
+  margin-bottom: 50px;
 }
 .washing-cycle__list {
   display: flex;
